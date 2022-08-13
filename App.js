@@ -1,12 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import CarItem from './components/CarItem';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+
+        <CarItem name='Model S' subtext ="Starting at $800" image="./assets/images/ModelS.jpeg"/>
+        <StatusBar style="auto" />
+
+    </SafeAreaView>
+
   );
 }
 
