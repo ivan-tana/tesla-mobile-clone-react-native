@@ -31,5 +31,12 @@ export const styles = StyleSheet.create({
         bottom: '10%',
         width: '100%',
         alignItems:'center'
+    },
+    Text_uderline:
+    {
+        color: "rgba(0,0,0,0.5)",
+        fontSize:16,
+        textDecorationLine: 'underline',
+        marginLeft:10,
     }
   });

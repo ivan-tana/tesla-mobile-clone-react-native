@@ -4,7 +4,7 @@ import { View, Text, ImageBackground, SafeAreaView } from 'react-native'
 import { styles } from './style'
 import StyledButton from '../styledButton'
 
-function CarItem({name, subtext, image}) {
+function CarItem({name, subtext, image, taglineCTA}) {
 
     const onpress = () =>
     {
@@ -17,8 +17,12 @@ function CarItem({name, subtext, image}) {
                 {name}
             </Text>
             <Text style={styles.Text}>
-                {subtext}
+                {subtext}  . 
+                <Text style={styles.Text_uderline}>
+                {taglineCTA}
             </Text>
+            </Text>
+
         </View>
 
         <View style ={styles.Buttons}>

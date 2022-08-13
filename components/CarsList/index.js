@@ -16,7 +16,7 @@ const CarsList = ()=>
     
             }}
                 data={cars}
-                renderItem={({item}) =>   <CarItem name={item.name}  image={item.image} subtext={item.subtext}/> }
+                renderItem={({item}) =>   <CarItem name={item.name}  image={item.image} subtext={item.subtext} taglineCTA={item.taglineCTA}/> }
                 snapToAlignment={'start'}
                 decelerationRate={'fast'}
                 snapToInterval={Dimensions.get('window').height + 70}
