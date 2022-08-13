@@ -2,10 +2,16 @@
 import React from 'react-native'
 import { View, Text, ImageBackground, SafeAreaView } from 'react-native'
 import { styles } from './style'
+import StyledButton from '../styledButton'
 
 function CarItem({name, subtext, image}) {
+
+    const onpress = () =>
+    {
+        console.warn('Inventory')
+    }
   return (
-    <ImageBackground style={styles.Carcontainer} source={require('../../assets/images/ModelS.jpeg')}>
+    <ImageBackground style={styles.Carcontainer} source={image}>
         <View style={styles.Header}>
             <Text style={styles.Heading}>
                 {name}
@@ -14,6 +20,13 @@ function CarItem({name, subtext, image}) {
                 {subtext}
             </Text>
         </View>
+
+        <View style ={styles.Buttons}>
+            <StyledButton text='Inventory' onpress={onpress}/>
+            <StyledButton text='Models' color='primary' />
+        </View>
+       
+       
 
     </ImageBackground>
 

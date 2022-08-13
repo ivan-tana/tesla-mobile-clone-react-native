@@ -1,4 +1,4 @@
-import { StyleSheet, Platform } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 
 export const styles = StyleSheet.create({
     Header: {
@@ -11,8 +11,8 @@ export const styles = StyleSheet.create({
     },
     Carcontainer: 
     {
-        width: '100%',
-        height: '100%',
+        width: "100%",
+        height:Dimensions.get('window').height + 70,
         resizeMode:'cover',
     },
     Heading:
@@ -24,5 +24,12 @@ export const styles = StyleSheet.create({
     {
         color: "rgba(0,0,0,0.5)",
         fontSize:16,
+    },
+    Buttons:
+    {
+        position: 'absolute',
+        bottom: '10%',
+        width: '100%',
+        alignItems:'center'
     }
   });
